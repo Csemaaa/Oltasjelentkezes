@@ -1,0 +1,222 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2021. máj. 17., 20:00:53
+    Author     : karal
+*/
+
+.pane {
+    -fx-background-image: url("vizsgal.png");
+
+    -fx-background-size:cover;
+    -fx-background-position: 200px, 0px, 0px, 0px;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+    /*-fx-background-color: red;*/
+}
+
+.menubutton {
+    -fx-background-color: rgba(14, 114, 140, 0.8);
+    -fx-border-radius: 0;
+    -fx-border-style: solid none none none;
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+    -fx-font-family: "Century Gothic";
+}
+
+.menubutton:hover {
+    -fx-background-color: rgba(14, 114, 140, 0.6);
+}
+
+.menubutton:pressed {
+    -fx-background-color: rgba(14, 114, 140, 1);
+
+}
+
+.menuhatter {
+    -fx-background-color: rgba(14, 114, 140);
+}
+
+.logo {
+    -fx-background-image: url("szuri.png");
+    -fx-background-size: cover;
+    -fx-background-color: rgba(19, 111, 134);
+}
+
+.table {
+    -fx-background-color: rgba(235, 245, 251, .9);
+    -fx-border-radius: 5px;
+    -fx-border-style: solid;
+    -fx-border-color: rgba(235, 245, 251, .9);
+    -fx-border-width: 5px;
+    -fx-grid-lines-visible: true;
+    -fx-vgap: 1;
+    -fx-hgap: 1;
+}
+
+    .table Line {
+        -fx-stroke: rgba(14, 114, 140, 1);
+        
+    }
+
+.label{
+    -fx-padding: 0 15px;
+}
+
+.kiirolabel {
+    -fx-background-color: rgba(235, 245, 251, .9);
+    -fx-border-radius: 5px;
+    -fx-border-style: solid;
+    -fx-border-color: grey;
+    -fx-border-width: 1;
+}
+
+.simabutton {
+    -fx-border-color: grey;
+    -fx-border-width: 1;
+    -fx-background-color: rgba(255,255,255, .8);
+    -fx-font-family: "Century Gothic";
+    -fx-font-size: 16px;
+}
+
+.table-view .column-header {
+    -fx-background-color: rgba(14, 114, 140, 0.6);  
+    -fx-border-style: solid;
+    -fx-border-color: rgba(235, 245, 251, .9);
+    -fx-border-width: 1px;
+}
+
+.table-view .column {
+    -fx-border-style: solid;
+    -fx-border-color: rgba(235, 245, 251, .9);
+    -fx-border-width: 1px;
+    -fx-background-color: rgba(14, 114, 140, 0.6);
+}
+
+#title {
+    -fx-text-fill: white;
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+    -fx-padding: 0 0 0 30;
+}
+
+.orvososszesitopane {
+    -fx-background-image: url("bg2.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: 200px, 0px, 0px, 0px;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+.dropdownlist {
+    -fx-background-color: rgba(133, 193, 233, .6);
+}
+
+.orvosvalasztopane {
+    -fx-background-image: url("bg3.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: 200px, 0px, 0px, 0px;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+.orvosvalsztoaltpane {
+    -fx-background-color: rgba(235, 245, 251, .9);
+    -fx-border-radius: 5px;
+    -fx-border-style: solid;
+    -fx-border-color: rgba(235, 245, 251, .9);
+    -fx-border-width: 5px;
+}
+
+.vakcinainfopane {
+    -fx-background-image: url("bg4.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: 200px, 0px, 0px, 0px;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+.beoltottsagparbeszedablakpane {
+    -fx-background-image: url("bg8.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: 200px, 0px, 0px, 0px;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+#osszesitopane {
+    -fx-background-image: url("rendelo.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+}
+
+#sumtexts {
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+}
+
+#sumlabels {
+    -fx-fill: white;
+    -fx-background-color: rgba(14, 114, 140, 0.9);
+    -fx-padding: 0 0 0 5;
+}
+
+#logpane {
+    -fx-background-image: url("dokis.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+}
+
+#regtextfields {
+    -fx-border-color: grey;
+    -fx-border-width: 1;
+}
+
+#logtextfields {
+    -fx-border-color: grey;
+    -fx-border-width: 1;
+    -fx-background-color: transparent;
+}
+
+#loglabels {
+    -fx-text-fill: white;
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+    -fx-padding: 0 0 0 10;
+}
+
+.vakcinagombok {
+    -fx-text-fill: white;
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+    -fx-font-size: 24;
+    -fx-font-weight: bold;
+}
+
+#vakcinakpane {
+    -fx-background-image: url("vizsgal.png");
+    -fx-background-size: cover;
+}
+
+#oltasvalasztopane {
+    -fx-background-image: url("vakcinak.png");
+    -fx-background-size: cover;
+}
+
+#regpane {
+    -fx-background-image: url("bacsi.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+}
+
+#reglabels {
+    -fx-text-fill: white;
+    -fx-background-color: rgba(0, 0, 0, 0.4);
+    -fx-padding: 0 0 0 5;
+    -fx-text-alignment: right;
+    -fx-padding: 0 5 0 0;
+}
+
+#simplalabel {
+    -fx-text-fill: white;
+    -fx-background-color: rgba(14, 114, 140, .8);
+    -fx-padding: 0 0 0 5;
+    -fx-font-weight: bold;
+}

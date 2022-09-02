@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" minHeight="600.0" minWidth="800.0" prefHeight="612.0" prefWidth="900.0" styleClass="pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.controller.indexController">
+   <children>
+      <GridPane layoutX="384.0" layoutY="98.0" prefHeight="255.0" prefWidth="469.0" styleClass="table" AnchorPane.leftAnchor="384.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="224.3333740234375" minWidth="10.0" prefWidth="160.3333740234375" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="299.6666259765625" minWidth="10.0" prefWidth="297.6666259765625" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" text="Név:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding></Label>
+            <Label style="-fx-padding: 0 5x;" text="Születési dátum:" GridPane.rowIndex="1">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label prefHeight="25.0" prefWidth="77.0" style="-fx-padding: 0 5x;" text="TAJ:" GridPane.rowIndex="2">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label style="-fx-padding: 0 5x;" text="Nem:" GridPane.rowIndex="3">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label fx:id="nevLabel" style="-fx-padding: 0 5x;" text="Kaktu Szofi" GridPane.columnIndex="1">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label fx:id="SzuletesiDatumLabel" style="-fx-padding: 0 5x;" text="2020.02.02" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label fx:id="TAJLabel" style="-fx-padding: 0 5x;" text="123456789" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <TextField fx:id="nevTextField" promptText="Dina Móricz" visible="false" GridPane.columnIndex="1" />
+            <TextField fx:id="TAJTextField" promptText="123456789" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ChoiceBox fx:id="nemChoiceBox" prefHeight="25.0" prefWidth="63.0" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="nemLabel" text="NŐ" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="BDPicker" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Button fx:id="Change" layoutX="182.0" layoutY="217.0" mnemonicParsing="false" onAction="#handleChangeButton" styleClass="simabutton" text="Szerkesztés" />
+      <Button fx:id="OKButton" layoutX="181.0" layoutY="254.0" mnemonicParsing="false" onAction="#OKButtonPushed" prefHeight="25.0" prefWidth="77.0" styleClass="simabutton" text="OK" visible="false" AnchorPane.leftAnchor="181.0" AnchorPane.topAnchor="254.0" />
+      <TableView fx:id="korTortenetTabla" layoutX="384.0" layoutY="391.0" prefHeight="173.0" prefWidth="469.0">
+        <columns>
+          <TableColumn fx:id="idopontOszlop" prefWidth="154.66677856445312" text="időpont" />
+          <TableColumn fx:id="vakcinaOszlop" prefWidth="160.6666259765625" text="vakcina" />
+            <TableColumn fx:id="orvosOszlop" prefWidth="147.33319091796875" text="orvos" />
+        </columns>
+         <styleClass>
+            <String fx:value="column-header" />
+            <String fx:value="table" />
+            <String fx:value="column" />
+         </styleClass>
+      </TableView>
+      <Label layoutX="174.0" layoutY="147.0" prefHeight="51.0" prefWidth="174.0" styleClass="kiirolabel" text="Saját adataim">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="182.0" layoutY="452.0" prefHeight="51.0" prefWidth="174.0" styleClass="kiirolabel" text="Kórtörténetem">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <VBox id="menuhatter" prefHeight="612.0" prefWidth="145.0" styleClass="menuhatter" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="755.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="156.0" prefWidth="152.0" styleClass="logo" />
+            <Button id="menu" fx:id="indexmenu" mnemonicParsing="false" onAction="#indexmenuClicked" prefHeight="47.0" prefWidth="157.0" styleClass="menubutton" text="Főoldal" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="jelentkezesmenu" contentDisplay="TEXT_ONLY" mnemonicParsing="false" onAction="#jelentkezesmenuclicked" prefHeight="53.0" prefWidth="152.0" styleClass="menubutton" text="Jelentkezés oltásra" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="orvosokmenu" mnemonicParsing="false" onAction="#orvosokmenuclicked" prefHeight="52.0" prefWidth="155.0" styleClass="menubutton" text="Orvosaink" textFill="WHITE" wrapText="true">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="vakcinainfomenu" mnemonicParsing="false" onAction="#vakcinainfomenuclicked" prefHeight="52.0" prefWidth="154.0" style="-fx-border-style: solid none solid none;" styleClass="menubutton" text="Vakcina Info" textFill="WHITE" wrapText="true">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="kilelpesmenu" mnemonicParsing="false" onAction="#kilelpesmenuclicked" prefHeight="52.0" prefWidth="169.0" styleClass="menubutton" text="Kilépés" textFill="WHITE" wrapText="true">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" top="200.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Label id="title" layoutX="145.0" layoutY="-3.0" prefHeight="64.0" prefWidth="756.0" text="Főoldal">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

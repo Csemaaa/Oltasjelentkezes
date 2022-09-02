@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="612.0" prefWidth="900.0" styleClass="vakcinainfopane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.controller.FXMLInfoController">
+   <children>
+      <VBox id="menuhatter" prefHeight="612.0" prefWidth="145.0" styleClass="menuhatter">
+         <children>
+            <Pane prefHeight="156.0" prefWidth="152.0" styleClass="logo" />
+            <Button id="menu" fx:id="indexmenu" mnemonicParsing="false" onAction="#indexmenuClicked" prefHeight="47.0" prefWidth="157.0" styleClass="menubutton" text="Főoldal" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="jelentkezesmenu" contentDisplay="TEXT_ONLY" mnemonicParsing="false" onAction="#jelentkezesmenuclicked" prefHeight="53.0" prefWidth="152.0" styleClass="menubutton" text="Jelentkezés oltásra" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="orvosokmenu" mnemonicParsing="false" onAction="#orvosokmenuclicked" prefHeight="52.0" prefWidth="155.0" styleClass="menubutton" text="Orvosaink" textFill="WHITE" wrapText="true">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="vakcinainfomenu" mnemonicParsing="false" onAction="#vakcinainfomenuclicked" prefHeight="52.0" prefWidth="154.0" style="-fx-border-style: solid none solid none;" styleClass="menubutton" text="Vakcina Info" textFill="WHITE" wrapText="true">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="kilelpesmenu" mnemonicParsing="false" onAction="#kilelpesmenuclicked" prefHeight="52.0" prefWidth="169.0" styleClass="menubutton" text="Kilépés" textFill="WHITE" wrapText="true">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" top="200.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Label id="title" layoutX="145.0" prefHeight="61.0" prefWidth="755.0" text="Információk az oltással kapcsolatban" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Pane layoutX="222.0" layoutY="94.0" prefHeight="493.0" prefWidth="600.0" styleClass="orvosvalsztoaltpane">
+         <children>
+            <ChoiceBox fx:id="valaszto" layoutX="101.0" layoutY="94.0" prefHeight="24.0" prefWidth="199.0" styleClass="dropdownlist" />
+            <TextArea fx:id="szoveg" editable="false" layoutX="31.0" layoutY="157.0" prefHeight="306.0" prefWidth="539.0" />
+            <Text layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Válassza ki melyik oltásról szeretne többet megtudni!" textAlignment="CENTER" wrappingWidth="600.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="mutasd" layoutX="367.0" layoutY="89.0" mnemonicParsing="false" onAction="#displayText" styleClass="simabutton" text="Mutasd" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

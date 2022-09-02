@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="oltasvalasztopane" maxHeight="612.0" maxWidth="900.0" minHeight="612.0" minWidth="900.0" prefHeight="612.0" prefWidth="900.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.controller.FXMLOltasokController">
+   <children>
+      <Button fx:id="btn1" layoutX="174.0" layoutY="158.0" mnemonicParsing="false" onAction="#handleButtonPushed" prefHeight="60.0" prefWidth="170.0" style="-fx-font-weight: bold;" styleClass="vakcinagombok" text="Oltas1" AnchorPane.leftAnchor="174.0" AnchorPane.topAnchor="158.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Button>
+      <Button fx:id="btn2" layoutX="354.0" layoutY="158.0" mnemonicParsing="false" onAction="#handleButtonPushed" prefHeight="60.0" prefWidth="170.0" styleClass="vakcinagombok" text="Oltas2" AnchorPane.leftAnchor="354.0" AnchorPane.topAnchor="158.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Button>
+      <Button fx:id="btn3" layoutX="534.0" layoutY="158.0" mnemonicParsing="false" onAction="#handleButtonPushed" prefHeight="60.0" prefWidth="170.0" styleClass="vakcinagombok" text="Oltas3" AnchorPane.rightAnchor="196.0" AnchorPane.topAnchor="158.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Button>
+      <Button fx:id="btn4" layoutX="714.0" layoutY="158.0" mnemonicParsing="false" onAction="#handleButtonPushed" prefHeight="60.0" prefWidth="170.0" styleClass="vakcinagombok" text="Oltas4" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="158.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Button>
+      <Button fx:id="btn5" layoutX="174.0" layoutY="278.0" mnemonicParsing="false" onAction="#handleButtonPushed" prefHeight="60.0" prefWidth="170.0" styleClass="vakcinagombok" text="Oltas5" AnchorPane.leftAnchor="174.0" AnchorPane.topAnchor="278.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Button>
+      <Button fx:id="btn9" layoutX="174.0" layoutY="398.0" mnemonicParsing="false" onAction="#handleButtonPushed" prefHeight="60.0" prefWidth="170.0" styleClass="vakcinagombok" text="Oltas9" AnchorPane.leftAnchor="174.0" AnchorPane.topAnchor="398.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Button>
+      <Button fx:id="btn13" layoutX="174.0" layoutY="517.0" mnemonicParsing="false" onAction="#handleButtonPushed" prefHeight="60.0" prefWidth="170.0" styleClass="vakcinagombok" text="Oltas13" AnchorPane.leftAnchor="174.0" AnchorPane.topAnchor="517.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Button>
+      <Button fx:id="btn6" layoutX="354.0" layoutY="278.0" mnemonicParsing="false" onAction="#handleButtonPushed" prefHeight="60.0" prefWidth="170.0" styleClass="vakcinagombok" text="Oltas6" AnchorPane.leftAnchor="354.0" AnchorPane.topAnchor="278.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Button>
+      <Button fx:id="btn10" layoutX="354.0" layoutY="398.0" mnemonicParsing="false" onAction="#handleButtonPushed" prefHeight="60.0" prefWidth="170.0" styleClass="vakcinagombok" text="Oltas10" AnchorPane.leftAnchor="354.0" AnchorPane.topAnchor="398.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Button>
+      <Button fx:id="btn14" layoutX="354.0" layoutY="517.0" mnemonicParsing="false" onAction="#handleButtonPushed" prefHeight="60.0" prefWidth="170.0" styleClass="vakcinagombok" text="Oltas14" AnchorPane.leftAnchor="354.0" AnchorPane.topAnchor="517.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Button>
+      <Button fx:id="btn7" layoutX="534.0" layoutY="278.0" mnemonicParsing="false" onAction="#handleButtonPushed" prefHeight="60.0" prefWidth="170.0" styleClass="vakcinagombok" text="Oltas7" AnchorPane.rightAnchor="196.0" AnchorPane.topAnchor="278.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Button>
+      <Button fx:id="btn11" layoutX="534.0" layoutY="398.0" mnemonicParsing="false" onAction="#handleButtonPushed" prefHeight="60.0" prefWidth="170.0" styleClass="vakcinagombok" text="Oltas11" AnchorPane.rightAnchor="196.0" AnchorPane.topAnchor="398.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Button>
+      <Button fx:id="btn15" layoutX="534.0" layoutY="517.0" mnemonicParsing="false" onAction="#handleButtonPushed" prefHeight="60.0" prefWidth="170.0" styleClass="vakcinagombok" text="Oltas15" AnchorPane.rightAnchor="196.0" AnchorPane.topAnchor="517.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Button>
+      <Button fx:id="btn8" layoutX="714.0" layoutY="278.0" mnemonicParsing="false" onAction="#handleButtonPushed" prefHeight="60.0" prefWidth="170.0" styleClass="vakcinagombok" text="Oltas8" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="278.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Button>
+      <Button fx:id="btn12" layoutX="714.0" layoutY="398.0" mnemonicParsing="false" onAction="#handleButtonPushed" prefHeight="60.0" prefWidth="170.0" styleClass="vakcinagombok" text="Oltas12" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="398.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Button>
+      <Button fx:id="btn16" layoutX="714.0" layoutY="517.0" mnemonicParsing="false" onAction="#handleButtonPushed" prefHeight="60.0" prefWidth="170.0" styleClass="vakcinagombok" text="Oltas16" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="517.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Button>
+      <Button fx:id="info" layoutX="439.0" layoutY="71.0" mnemonicParsing="false" onAction="#handleInfoButton" prefHeight="60.0" prefWidth="180.0" styleClass="simabutton" text="Betegtájékoztató" AnchorPane.rightAnchor="281.0" AnchorPane.topAnchor="71.0" />
+      <Label id="title" layoutX="143.0" layoutY="-1.0" prefHeight="60.0" prefWidth="757.0" text="Válaszd ki az oltást:">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <VBox id="menuhatter" layoutY="-5.0" prefHeight="622.0" prefWidth="145.0" styleClass="menuhatter">
+         <children>
+            <Pane prefHeight="156.0" prefWidth="152.0" styleClass="logo" />
+            <Button id="menu" fx:id="indexmenu" mnemonicParsing="false" onAction="#indexmenuClicked" prefHeight="47.0" prefWidth="157.0" styleClass="menubutton" text="Főoldal" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="jelentkezesmenu" contentDisplay="TEXT_ONLY" mnemonicParsing="false" onAction="#jelentkezesmenuclicked" prefHeight="53.0" prefWidth="152.0" styleClass="menubutton" text="Jelentkezés oltásra" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="orvosokmenu" mnemonicParsing="false" onAction="#orvosokmenuclicked" prefHeight="52.0" prefWidth="155.0" styleClass="menubutton" text="Orvosaink" textFill="WHITE" wrapText="true">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="vakcinainfomenu" mnemonicParsing="false" onAction="#vakcinainfomenuclicked" prefHeight="52.0" prefWidth="154.0" style="-fx-border-style: solid none solid none;" styleClass="menubutton" text="Vakcina Info" textFill="WHITE" wrapText="true">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="kilelpesmenu" mnemonicParsing="false" onAction="#kilelpesmenuclicked" prefHeight="52.0" prefWidth="169.0" styleClass="menubutton" text="Kilépés" textFill="WHITE" wrapText="true">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" top="200.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

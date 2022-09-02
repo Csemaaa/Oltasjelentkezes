@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="logpane" maxHeight="400.0" maxWidth="900.0" minHeight="400.0" minWidth="900.0" prefHeight="400.0" prefWidth="900.0" stylesheets="@./style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.controller.FXMLLoginSceneController">
+   <children>
+      <Label id="title" layoutX="-5.0" layoutY="-3.0" prefHeight="65.0" prefWidth="907.0" text="Bejelentkezés">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextField id="regtextfields" fx:id="textemail" layoutX="65.0" layoutY="158.0" prefHeight="32.0" prefWidth="284.0" promptText="✉ E-mail " />
+      <PasswordField id="regtextfields" fx:id="textjelszo" layoutX="65.0" layoutY="248.0" prefHeight="32.0" prefWidth="284.0" promptText="🔒 Jelszó" />
+      <Label id="loglabels" layoutX="65.0" layoutY="112.0" prefHeight="31.0" prefWidth="284.0" text="E-mail:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label id="loglabels" layoutX="67.0" layoutY="205.0" prefHeight="35.0" prefWidth="284.0" text="Jelszó:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button id="regbutton" layoutX="567.0" layoutY="220.0" mnemonicParsing="false" onAction="#handleRegisztracioButtonPressed" prefHeight="40.0" prefWidth="146.0" styleClass="simabutton" text="Regisztráció" AnchorPane.bottomAnchor="140.0" AnchorPane.leftAnchor="567.0" AnchorPane.rightAnchor="187.0" AnchorPane.topAnchor="220.0">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button id="loginbutton" layoutX="146.0" layoutY="315.0" mnemonicParsing="false" onAction="#handleBelepesButtonPressed" prefHeight="40.0" prefWidth="123.0" styleClass="simabutton" text="Belépés">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Label id="loglabels" layoutX="529.0" layoutY="175.0" prefHeight="35.0" prefWidth="221.0" text="Még nincs fiókja?">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

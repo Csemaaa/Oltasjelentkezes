@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="612.0" prefWidth="900.0" styleClass="orvosvalasztopane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.controller.FXMLAdatokController">
+   <children>
+      <Button fx:id="nextbtn" disable="true" layoutX="717.0" layoutY="519.0" mnemonicParsing="false" onAction="#nextPage" prefHeight="47.0" prefWidth="153.0" style="-fx-background-color: white;" text="Tovább" AnchorPane.bottomAnchor="45.66666666666663" AnchorPane.rightAnchor="29.66666666666663">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <VBox id="menuhatter" layoutX="-7.0" prefHeight="612.0" prefWidth="145.0" styleClass="menuhatter">
+         <children>
+            <Pane prefHeight="156.0" prefWidth="152.0" styleClass="logo" />
+            <Button id="menu" fx:id="indexmenu" mnemonicParsing="false" onAction="#indexmenuClicked" prefHeight="47.0" prefWidth="157.0" styleClass="menubutton" text="Főoldal" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="jelentkezesmenu" contentDisplay="TEXT_ONLY" mnemonicParsing="false" onAction="#jelentkezesmenuclicked" prefHeight="53.0" prefWidth="152.0" styleClass="menubutton" text="Jelentkezés oltásra" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="orvosokmenu" mnemonicParsing="false" onAction="#orvosokmenuclicked" prefHeight="52.0" prefWidth="155.0" styleClass="menubutton" text="Orvosaink" textFill="WHITE" wrapText="true">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="vakcinainfomenu" mnemonicParsing="false" onAction="#vakcinainfomenuclicked" prefHeight="52.0" prefWidth="154.0" style="-fx-border-style: solid none solid none;" styleClass="menubutton" text="Vakcina Info" textFill="WHITE" wrapText="true">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="kilelpesmenu" mnemonicParsing="false" onAction="#kilelpesmenuclicked" prefHeight="52.0" prefWidth="169.0" styleClass="menubutton" text="Kilépés" textFill="WHITE" wrapText="true">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" top="200.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Label id="title" layoutX="138.0" prefHeight="67.0" prefWidth="763.0" text="Orvos választása" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Pane layoutX="156.0" layoutY="117.0" prefHeight="335.0" prefWidth="286.0" styleClass="orvosvalsztoaltpane">
+         <children>
+            <RadioButton fx:id="dr1" layoutX="23.0" layoutY="70.0" mnemonicParsing="false" onAction="#idopontok" text="Dr. Ügyes Zsolt">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="doctors" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="dr2" layoutX="22.0" layoutY="105.0" mnemonicParsing="false" onAction="#idopontok" text="Dr. Szuri Káta" toggleGroup="$doctors">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="dr3" layoutX="22.0" layoutY="139.0" mnemonicParsing="false" onAction="#idopontok" text="Dr. Ollókezű Edward" toggleGroup="$doctors">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="dr4" layoutX="24.0" layoutY="173.0" mnemonicParsing="false" onAction="#idopontok" text="Dr. Padlógáz" toggleGroup="$doctors">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="dr5" layoutX="24.0" layoutY="245.0" mnemonicParsing="false" onAction="#idopontok" text="Dr. Harry Potter" toggleGroup="$doctors">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="dr6" layoutX="24.0" layoutY="207.0" mnemonicParsing="false" onAction="#idopontok" text="Dr. Lassúkezű Dénes" toggleGroup="$doctors">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </RadioButton>
+            <Text fx:id="tst21" layoutX="62.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Orvos választás" textAlignment="CENTER" wrappingWidth="153.16796875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="585.0" layoutY="117.0" prefHeight="335.0" prefWidth="286.0" styleClass="orvosvalsztoaltpane">
+         <children>
+            <Text fx:id="tst2" layoutX="66.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Időpont választás" textAlignment="CENTER" wrappingWidth="153.16796875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <ChoiceBox fx:id="idopontValaszto" layoutX="39.0" layoutY="121.0" prefHeight="34.0" prefWidth="208.0" styleClass="dropdownlist" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
